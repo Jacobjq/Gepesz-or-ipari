@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#game {
+    margin-left: 80%;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    background-image: url('https://media.istockphoto.com/id/1185199335/vector/straight-empty-road-through-the-countryside-on-city-background-green-hills-blue-sky-meadow.jpg?s=612x612&w=0&k=20&c=fCDrmZ2Jw215-gyCsD4MirJabBK77LIYEa1Dq2yt9h0=');
+}
+
+#block {
+    width: 50px;
+    height: 500px;
+    background-image: url('https://media.istockphoto.com/id/1012404208/photo/lava-background.jpg?s=170667a&w=0&k=20&c=nJl78_WjLhc5-SsDf6nV_cAWA4e-JJH9ncvXyNZUIH0=');
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 400px
+    }
+    100% {
+        left: -50px
+    }
+}
+
+#hole {
+    width: 50px;
+    height: 150px;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s infinite linear;
+    background-image: url('https://cdn.pixabay.com/photo/2013/12/17/20/10/bubbles-230014__340.jpg');
+}
+
+#character {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+    background-image: url('kicsi-removebg-preview.png');
+}
